@@ -33,8 +33,9 @@ SECRET_KEY = 'django-insecure-9em*+d3o^kruc_tv83e6^h5!i%t^nu@*h$)tvccr)orj6)@77w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['image-gallery01.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['image-gallery00.herokuapp.com']
+# ALLOWED_HOSTS = ['image-gallery01.herokuapp.com', '127.0.0.1']
+
 
 
 # Application definition
@@ -46,7 +47,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'photos.apps.PhotosConfig',
 ]
 
@@ -89,7 +89,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -145,7 +145,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-LOGIN_REDIRECT_URL = '/'
+# LOGIN_REDIRECT_URL = '/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

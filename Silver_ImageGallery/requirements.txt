@@ -1,0 +1,13 @@
+asgiref
+Django
+django-storages
+jmespath
+Pillow
+python==3.10
+psycopg2 
+pytz
+s3transfer
+six
+sqlparse
+urllib3
+Whitenoise

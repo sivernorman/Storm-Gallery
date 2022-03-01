@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/moringa/Desktop/python-projects/Storm-Gallery/virtual"
+VIRTUAL_ENV="/home/moringa/Desktop/python-projects/Storm-Gallery/Silver_ImageGallery/virtual"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

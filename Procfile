@@ -1,2 +1,1 @@
-web: gunicorn Silver_ImageGallery.wsgi --log-file -
-
+web: gunicorn Silver_ImageGallery.wsgi

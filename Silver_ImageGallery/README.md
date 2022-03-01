@@ -19,7 +19,7 @@ Ensure that the MODE in the .env is set to development ('dev'), which will autom
 
 Now run the following command
 
-python3.6 manage.py runserver
+python3.8 manage.py runserver
 And view the site at the port provided which is most likely 127.0.0.1:8000
 
 # Running the tests

@@ -2,19 +2,29 @@ import dj_database_url
 import os
 from Silver_ImageGallery.settings.local import *
 
-DEBUG = False
+DEBUG = True
+ALLOWED_HOSTS = ["*"]
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'silverImage',
+#         'USER': 'postgres',
+#         'PASSWORD': 'silverImage',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'silverImage',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "silverImage",
         'USER': 'postgres',
         'PASSWORD': 'silverImage',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'HOST': '127.0.0.1',
+        'PORT': '5432'
     }
 }
-
 
 
 # SSL and TLS settings
